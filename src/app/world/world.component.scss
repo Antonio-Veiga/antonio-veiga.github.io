@@ -1,0 +1,27 @@
+.xl-styled-bg {
+    clip-path: polygon(0% 0%, 40% 0%, 60% 100%, 0% 100%);
+    background-color: var(--ion-color-primary);
+}
+
+.sm-styled-bg {
+    clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0% 100%);
+    background-color: var(--ion-color-primary);
+}
+
+.hover-effect {
+    background-image: linear-gradient(90deg, white, white);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+    text-decoration: none;
+}
+
+.hover-effect:hover {
+    background-size: 100% 3px
+}
+
+.icon-hover-effect:hover {
+    color: rgb(56 128 255) !important;
+    border-color: rgb(56 128 255) !important;
+}

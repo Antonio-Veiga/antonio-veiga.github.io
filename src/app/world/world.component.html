@@ -1,0 +1,44 @@
+<!-- LOADED INDEPENDENTLY -->
+<div data-attr="canvas-holder" class="absolute inset-0">
+  <ng-container *ngComponentOutlet="canvas"></ng-container>
+</div>
+
+<!-- LARGE DEVICES ONLY -->
+<div data-attr="main-screen-title-card" class="absolute inset-0 xl-styled-bg z-50" *ngIf="xl">
+  <div data-attr="descriptive-text" class="flex flex-col justify-center h-full w-[50%] ml-[0.5rem] xl:ml-[3rem]">
+    <h2
+      class="uppercase w-fit focus:outline-blue-700 cursor-default focus:outline-offset-4 text-lg xl:text-2xl mb-4 pb-1 font-thin text-white text-left tracking-wider subpixel-antialiased hover-effect">
+      Ainda Em Construção.</h2>
+    <h2
+      class="uppercase w-fit focus:outline-blue-700 mr-[1.5rem] cursor-default focus:outline-offset-4 text-lg xl:text-2xl mb-4 pb-1 font-thin text-white text-left tracking-wider subpixel-antialiased hover-effect">
+      Melhor Esperar pela a próxima atualização.</h2>
+  </div>
+
+  <div data-attr="footer"
+    class="absolute inset-x-0 h-[50%] p-6 bottom-0 flex items-center space-x-4 ml-[0.5rem] xl:ml-[3rem]">
+    <ion-icon (click)="discord()" name="logo-discord" size="large"
+      class="!text-white p-4 border icon-hover-effect rounded-full cursor-pointer hover:bg-gray-100 duration-150"></ion-icon>
+    <ion-icon (click)="github()" name="logo-github" size="large"
+      class="!text-white p-4 border icon-hover-effect rounded-full cursor-pointer hover:bg-gray-100 duration-150"></ion-icon>
+  </div>
+</div>
+
+<!-- SMALL DEVICES ONLY -->
+<div data-attr="main-screen-title-card" class="absolute inset-0 sm-styled-bg z-50" *ngIf="sm">
+  <div data-attr="descriptive-text" class="relative translate-y-[100%] flex flex-col justify-center h-[50%] ml-[0.5rem] xl:ml-[3rem]">
+    <h2
+      class="uppercase mx-4 w-fit focus:outline-blue-700 cursor-default focus:outline-offset-4 text-lg xl:text-2xl mb-4 pb-1 font-thin text-white text-left tracking-wider subpixel-antialiased hover-effect">
+      Ainda Em Construção.</h2>
+    <h2
+      class="uppercase w-fit focus:outline-blue-700 mx-4 cursor-default focus:outline-offset-4 text-lg xl:text-2xl mb-4 pb-1 font-thin text-white text-left tracking-wider subpixel-antialiased hover-effect">
+      Melhor Esperar pela a próxima atualização.</h2>
+  </div>
+
+  <div data-attr="footer"
+    class="absolute inset-x-0 w-full p-6 bottom-0 flex items-center justify-center space-x-4">
+    <ion-icon name="logo-discord" size="large"
+      class="!text-white p-2 shrink-0 border icon-hover-effect rounded-full cursor-pointer hover:bg-gray-100 duration-150"></ion-icon>
+    <ion-icon name="logo-github" size="large"
+      class="!text-white p-2 shrink-0 border icon-hover-effect rounded-full cursor-pointer hover:bg-gray-100 duration-150"></ion-icon>
+  </div>
+</div>
